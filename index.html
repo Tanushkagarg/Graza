@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graza Olive Oil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">GRAZA</div>
+            <ul class="nav-links">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Get Refills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Glog</a></li>
+                <li><a href="#" class="icon"><img src="user-icon.png" alt="User Icon"></a></li>
+                <li><a href="#" class="cart">Cart [<span id="cartCount">0</span>]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Product Section -->
+        <div class="product-section">
+            <!-- Left Images -->
+            <div class="product-images">
+              <img src="thumb1.jpg" alt="Main Product" class="main-product-img" id="mainImage">
+                
+                <div class="thumbnails">
+                    <img src="thumb1.jpg" alt="Thumbnail 1" class="thumbnail" data-large="thumb1-large.jpg">
+                    <img src="thumb2.jpg" alt="Thumbnail 2" class="thumbnail" data-large="thumb2-large.jpg">
+                    <img src="thumb3.jpg" alt="Thumbnail 3" class="thumbnail" data-large="thumb3-large.jpg">
+                    <img src="thumb4.jpg" alt="Thumbnail 4" class="thumbnail" data-large="thumb4-large.jpg">
+                    <img src="thumb5.jpg" alt="Thumbnail 5" class="thumbnail" data-large="thumb5-large.jpg">
+                    <img src="thumb6.jpg" alt="Thumbnail 6" class="thumbnail" data-large="thumb6-large.jpg">
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <h1>“The Duo” Drizzle & Sizzle Set</h1>
+                <div class="reviews">
+                    <span>★★★★★</span>
+                    <span>2143 Reviews</span>
+                </div>
+
+                <!-- Pricing Options -->
+                <div class="pricing-options">
+                    <h3>Quantity</h3>
+                    <div class="quantity-options">
+                        <button class="quantity-option" data-price="37" data-subscription-price="33.30" data-set="1">+10% Off<br><strong>1 Set</strong></button>
+                        <button class="quantity-option" data-price="68" data-subscription-price="59" data-set="2">Free Shipping!<br>+14% Off<br><strong>2 Sets</strong></button>
+                        <button class="quantity-option" data-price="96" data-subscription-price="82" data-set="3">Free Shipping!<br>+15% Off<br><strong>3 Sets</strong></button>
+                        <button class="quantity-option" data-price="154" data-subscription-price="132" data-set="6">Free Shipping!<br>+17% Off<br><strong>6 Sets</strong></button>
+                    </div>
+
+                    <!-- Purchase Options -->
+                    <div class="purchase-options">
+                        <input type="radio" id="one-time" name="purchase" checked>
+                        <label for="one-time">One Time Purchase</label>
+                        <span id="oneTimePrice">$37</span>
+                    </div>
+
+                    <div class="purchase-options">
+                        <input type="radio" id="subscribe" name="purchase">
+                        <label for="subscribe">Subscribe & Save</label>
+                        <span class="discounted" id="subscriptionPrice">$33.30</span> <span class="original" id="originalPrice">$37</span>
+                        <select>
+                            <option>Frequency: Every 1 Month</option>
+                            <option>Frequency: Every 2 Months</option>
+                            <option>Frequency: Every 3 Months</option>
+                        </select>
+                    </div>
+
+                    
+                    <!-- Add to Cart Button -->
+                    <div class="cart-button-container">
+                        <button id="addToCartButton"  class="add-to-cart">Add to Cart</button>
+                        <button id="subscribeButton" class="subscribe" style="display: none;">Subscribe</button>
+                    </div>
+                   
+
+
+                    <!-- Refill Preference -->
+                    <h3>Select Refill Preference:</h3>
+                    <div class="refill-options">
+                        <button class="refill-option">Refill Cans<br><strong>$33.30 / order</strong></button>
+                        <button class="refill-option">Squeeze Bottles<br><strong>$33.30 / order</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Graza Olive Oil. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <!-- <script>
+        // scripts.js
+
+function handleAddToCart() {
+    // Your logic for adding the item to the cart
+    console.log("Item added to cart");
+}
+    </script> -->
+</body>
+
+</html>
+
